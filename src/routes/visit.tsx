@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 
+import { Footer } from "../components/Footer";
 import { MapPin, Phone, Clock, Utensils } from "lucide-react";
 
 export const Route = createFileRoute("/visit")({
@@ -143,6 +144,8 @@ function VisitPage() {
           </div>
         </div>
       </section>
+      <Footer />
     </main>
   );
 }
+
