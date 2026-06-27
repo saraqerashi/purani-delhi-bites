@@ -79,19 +79,43 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Purani Delhi Restaurant — Authentic Indian Dining in Bahrain" },
+      {
+        name: "description",
+        content:
+          "Purani Delhi Restaurant serves authentic Indian food in Bahrain. Tandooris, Grills, Chaats, Indian & Chinese mains, and more. Located in Al Hoora, Manama.",
+      },
+      { name: "author", content: "Purani Delhi Restaurant" },
+      {
+        property: "og:title",
+        content: "Purani Delhi Restaurant — Authentic Indian Dining in Bahrain",
+      },
+      {
+        property: "og:description",
+        content:
+          "Purani Delhi Restaurant serves authentic Indian food in Bahrain. Tandooris, Grills, Chaats, Indian & Chinese mains, and more. Located in Al Hoora, Manama.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:site", content: "@PuraniDelhi" },
     ],
     links: [
       {
         rel: "stylesheet",
         href: appCss,
+      },
+      {
+        rel: "preconnect",
+        href: "https://fonts.googleapis.com",
+      },
+      {
+        rel: "preconnect",
+        href: "https://fonts.gstatic.com",
+        crossOrigin: "anonymous",
+      },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700&display=swap",
       },
     ],
   }),
@@ -120,7 +144,7 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
+      <Header />
       <Outlet />
     </QueryClientProvider>
   );
