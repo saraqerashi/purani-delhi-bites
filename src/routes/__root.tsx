@@ -79,7 +79,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Purani Delhi Restaurant — Authentic Indian Dining in Bahrain" },
+      { title: "gb" },
       {
         name: "description",
         content:
@@ -98,6 +98,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@PuraniDelhi" },
+      { property: "og:title", content: "gb" },
+      { name: "twitter:title", content: "gb" },
+      { name: "description", content: "Taste of India Online is a website for Purani Delhi Restaurant, offering authentic Indian cuisine in Bahrain." },
+      { property: "og:description", content: "Taste of India Online is a website for Purani Delhi Restaurant, offering authentic Indian cuisine in Bahrain." },
+      { name: "twitter:description", content: "Taste of India Online is a website for Purani Delhi Restaurant, offering authentic Indian cuisine in Bahrain." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1fcc4dbd-24e3-4622-9c4e-1cd6d9a2ee5d/id-preview-43cd19af--259f01e2-16d2-424d-a829-ca4eb367bd7f.lovable.app-1782598500273.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1fcc4dbd-24e3-4622-9c4e-1cd6d9a2ee5d/id-preview-43cd19af--259f01e2-16d2-424d-a829-ca4eb367bd7f.lovable.app-1782598500273.png" },
     ],
     links: [
       {
