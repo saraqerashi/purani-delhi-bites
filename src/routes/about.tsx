@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 
+import { Footer } from "../components/Footer";
 import tandoori from "../assets/tandoori.jpg";
 
 export const Route = createFileRoute("/about")({

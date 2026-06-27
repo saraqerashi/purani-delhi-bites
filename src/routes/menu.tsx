@@ -215,6 +215,8 @@ function MenuPage() {
           </a>
         </div>
       </section>
+      <Footer />
     </main>
   );
 }
+
