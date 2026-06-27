@@ -119,6 +119,8 @@ function AboutPage() {
           </div>
         </div>
       </section>
+      <Footer />
     </main>
   );
 }
+
